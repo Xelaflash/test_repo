@@ -43,6 +43,9 @@ color: white;
 }
 
 #footer {
-  font-size: 10px;
+  font-size: 12px;
+  background-color: #FC3A52;
+  border-style: solid;
+  border-radius: 5px;
 }
 
