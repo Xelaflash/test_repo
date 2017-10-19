@@ -1,0 +1,44 @@
+/* font and colour only*/
+body{
+  background: rgb(245,245,245);
+  color: black;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+font-family: 'Roboto', sans-serif;
+  color: red;
+  font-weight: lighter;
+  font-size: 50px;
+}
+
+h2 {
+
+  color: #C62727;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  color: blue;
+  font-size: 20px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: green;
+}
+
+/* custom design*/
+#header {
+background-image:url("https://unsplash.it/1000/600/?random");
+background-size: cover;
+padding: 150px 0;
+text-align: center;
+color: white;
+
+}
+
