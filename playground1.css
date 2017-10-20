@@ -47,21 +47,25 @@ color: white;
 #footer {
   font-family: 'Roboto', sans-serif;
   color: white;
+  padding: 1px;
   font-size: 12px;
   text-align: center;
-  background-color: #432160;
-  border-style: dotted;
+  background-color: #143A52;
+  border-style: lighter;
+  border-color: #143A52;
   border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+
 }
 
 .card {
-  border-style: solid;
-  border-color: blue;
-  border-width: lighter;
   border-radius: 5px;
-  padding: 10px;
-  margin: 100px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-  box-align: left;
+  display: inline-block;
+  border: 2px solid #143A52;
+  margin-top: 4px;
+  padding: 30px ;
+  text-align: center;
+  width: 500px;
 }
 
