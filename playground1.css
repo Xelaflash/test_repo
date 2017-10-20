@@ -1,6 +1,6 @@
 /* font and colour only*/
 body{
-  background: rgb(245,245,245);
+  background: #FFCEF3;
   color: black;
   font-size: 25px;
   font-family: 'Montserrat', sans-serif;
@@ -14,11 +14,13 @@ font-family: 'Roboto', sans-serif;
 }
 
 h2 {
-
   color: #C62727;
   font-weight: bold;
   font-size: 20px;
+}
 
+p {
+  padding-bottom: 10px;
 }
 
 a {
@@ -43,9 +45,12 @@ color: white;
 }
 
 #footer {
+  font-family: 'Roboto', sans-serif;
+  color: white;
   font-size: 12px;
-  background-color: #FC3A52;
-  border-style: solid;
-  border-radius: 5px;
+  text-align: center;
+  background-color: #432160;
+  border-style: dotted;
+  border-radius: 4px;
 }
 
