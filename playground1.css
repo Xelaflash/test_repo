@@ -1,6 +1,6 @@
 /* font and colour only*/
 body{
-  background: #FFCEF3;
+  background: #E3EFF3;
   color: black;
   font-size: 25px;
   font-family: 'Montserrat', sans-serif;
@@ -52,5 +52,16 @@ color: white;
   background-color: #432160;
   border-style: dotted;
   border-radius: 4px;
+}
+
+.card {
+  border-style: solid;
+  border-color: blue;
+  border-width: lighter;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 100px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  box-align: left;
 }
 
