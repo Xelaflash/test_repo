@@ -1,6 +1,6 @@
 /* font and colour only*/
 body{
-  background: #FFCEF3;
+  background: #E3EFF3;
   color: black;
   font-size: 25px;
   font-family: 'Montserrat', sans-serif;
@@ -47,10 +47,25 @@ color: white;
 #footer {
   font-family: 'Roboto', sans-serif;
   color: white;
+  padding: 1px;
   font-size: 12px;
   text-align: center;
-  background-color: #432160;
-  border-style: dotted;
+  background-color: #143A52;
+  border-style: lighter;
+  border-color: #143A52;
   border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  border: 2px solid #143A52;
+  margin-top: 4px;
+  padding: 30px ;
+  text-align: center;
+  width: 500px;
 }
 
