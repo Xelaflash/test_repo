@@ -61,20 +61,6 @@ text-align: -webkit-center;
   }
 
 
-#footer {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  padding: 1px;
-  font-size: 12px;
-  text-align: center;
-  background-color: #143A52;
-  border-style: lighter;
-  border-color: #143A52;
-  border-radius: 4px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-
-}
-
 .card {
   border-radius: 5px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
@@ -83,7 +69,6 @@ text-align: -webkit-center;
   margin-top: 4px;
   padding: 30px ;
   text-align: center;
-  width: 500px;
 }
 
 .card:hover {
@@ -122,7 +107,6 @@ text-align: -webkit-center;
   text-decoration: underline;
   color: white;
 }
-
 
 
 
@@ -273,6 +257,39 @@ text-align: -webkit-center;
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
-
 /* End css nav bar */
+
+
+/* footer wagpn */
+
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 5px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
+
+
+
+
 
