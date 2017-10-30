@@ -55,20 +55,35 @@ text-align: -webkit-center;
 
 
 
-  .avatar-small {
+.avatar-small {
   width: 80px;
   border-radius: 40%;
-  }
+}
 
+
+
+.flex-container {
+  display: flex;
+  background-color: lightgray;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+  margin-top: 100px;
+  padding: 10px;
+}
 
 .card {
   border-radius: 5px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-  display: inline-block;
   border: 2px solid #143A52;
-  margin-top: 4px;
+  margin: 10px;
+
   padding: 30px ;
   text-align: center;
+  width: 200px;
+  height: 225px;
+  flex-grow: flex-grow: 1;
+  flex-basis: auto;
 }
 
 .card:hover {
@@ -114,25 +129,29 @@ text-align: -webkit-center;
 /*test messages et navbar */
 
 /*begin css msg*/
-.message {
-    align-items: center;
-    padding: 20px;
+.message-container {
+    padding: 10px;
     border: 1px solid rgba(220,224,244,0.4);
     background-color: beige;
     display: inline-flex;
+    flex-direction: column;
 }
-.message:last-child {
-  border-bottom: none;
-}
-.message-body {
-  flex-grow: 1;
-  margin: 1px 50px;
 
+.message-body {
+  border: solid black;
+  flex-grow: 0;
+  margin: 12px 50px;
+  align-items: flex-start;
+  padding: 10px 50px;
+  color: rgba(0,0,0,0.4);
+  display: list-item;
+  border-radius: 10px;
 }
 
 .message-name {
   padding-left: 10px;
   min-width: 100px;
+  color: #C62727;
 }
 .message-name h3 {
   font-size: 13px;
@@ -287,6 +306,10 @@ text-align: -webkit-center;
 }
 .footer .fa-heart {
   color: #D23333;
+}
+
+.footer-copyright {
+  font-size: 19px;
 }
 
 
