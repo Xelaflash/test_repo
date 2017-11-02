@@ -1,60 +1,47 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <title>My playground Website</title>
     <link rel="stylesheet" href="playground1.css">
+       <title>My playground Website</title>
   </head>
 
 
   <body>
-
-
 <!-- NAVBAR -->
 <div class="navbar-wagon">
-
 
   <!-- Logo -->
   <a href="" class="navbar-wagon-brand">
     <img src="images/picture13464024384353.png" alt="logo">
   </a>
 
-  <!-- Right Navigation -->
+  <!-- middle Navigation -->
     <div class="navbar-wagon-right hidden-xs hidden-sm">
       <a href="" class="navbar-wagon-item navbar-wagon-link">Host</a>
       <a href="" class="navbar-wagon-item navbar-wagon-link">Trips</a>
       <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a>
   </div>
 
-
-
  <!-- Profile picture with dropdown list -->
-<div class="navbar-wagon-item">
-      <div class="dropdown">
+  <div class="navbar-wagon-item">
+    <div class="dropdown">
+    <img src="images/99b4c46cabb65ba610c2f7bca032676d-day-of-the-dead-skeleton-guitar-logo-by-vexels.png" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
 
-        <img src="images/99b4c46cabb65ba610c2f7bca032676d-day-of-the-dead-skeleton-guitar-logo-by-vexels.png" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
-
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Log Out</a></li>
-        </ul>
-      </div>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
     </div>
-
-
-
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
   </div>
-</div>
-
 
 </div>
 
@@ -71,6 +58,10 @@
       <a href="#" class="btn-medium">Contact us</a>
     </div>
 </div>
+
+
+
+
 
 
 
@@ -196,7 +187,9 @@
   </div>
 </div>
 
-
+<!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
   </body>
 </html>
