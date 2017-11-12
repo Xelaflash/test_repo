@@ -37,8 +37,140 @@ a:hover {
   color: green;
 }
 
-/* custom design*/
+/* Begin css nav bar */
+/* Main navbar */
+.navbar-wagon {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,1),0 1px 0 0 rgba(0,0,0,1);
+  background: linear-gradient(135deg, #3a7bd5, #3a7bd5 60%, #2c3e50);
+  transition: all 0.3s ease;
+  height: 56px;
+  padding: 1px 2px 0px 2px;
+  display: flex;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  width: 100%;
+  position: fixed;
+  z-index: 1; /* permet de mettre au dessus */
+}
 
+.navbar-wagon-item{
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-wagon-right{
+  display: inline-block;
+  justify-content: space-between;
+  word-spacing: 50px;
+  padding: 0 150px 0 150px;
+}
+
+.navbar-social a {
+  cursor: pointer;
+  font-size: 27px;
+  transition: all .2s ease-in-out;
+}
+
+.fa-youtube-play {
+  color: #EB3324;
+  margin-right: 10px;
+}
+.fa-youtube-play:hover {
+  transform: scale(1.3);
+}
+
+.fa-skype {
+  color: #49AEEA;
+  margin-right: 10px;
+}
+.fa-skype:hover {
+  transform: scale(1.3);
+}
+
+.fa-btc {
+  color: #fff954;
+  margin-right: 10px;
+}
+.fa-btc:hover {
+  transform: scale(1.3);
+}
+
+/* Logo */
+.navbar-wagon-brand img{
+    width: 90px;
+    border-radius: 40%;
+    padding: 13px;
+}
+/* User Avatar */
+.navbar-wagon .avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* Basic navbar item */
+.navbar-wagon-drop {
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+/* Navbar link */
+.navbar-wagon-link {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar-wagon-link:hover {
+opacity: 1;
+color: black;
+border-bottom: solid;
+}
+
+/* Dropdown menu */
+.navbar-wagon-dropdown-menu {
+  margin-top: 10px;
+  box-shadow: none;
+  border-color: #E6E6E6;
+}
+.navbar-wagon-dropdown-menu li > a {
+  transition: color 0.3s ease;
+  font-weight: lighter !important;
+  color: #999999 !important;
+  font-size: 13px !important;
+  line-height: 22px !important;
+  padding: 10px 20px;
+}
+.navbar-wagon-dropdown-menu li > a:hover {
+  background: transparent !important;
+  color: black !important;
+  font-weight: bold !important;
+}
+.navbar-wagon-dropdown-menu:before {
+  content: ' ';
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  right: 10px;
+  top: -6px;
+  background-color: white;
+  transform: rotate(45deg);
+  border-left: 1px solid #E6E6E6;
+  border-top: 1px solid #E6E6E6;
+}
+.fa-cogs {
+  font-size: 30px;
+  padding: 10px;
+}
+/* End css nav bar */
+
+
+
+/* header design*/
 #header {
 background-image:url("https://unsplash.it/1000/600/?random");
 background-size: cover;
@@ -92,38 +224,7 @@ text-align: center;
   opacity: 0.9;
 }
 /* END BUTTONS*/
-
-
-/* Card*/
-.flex-container {
-  display: flex;
-  background-color: lightgray;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: stretch;
-  padding: 10px;
-}
-.card {
-  border-radius: 5px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-  border: 2px solid #143A52;
-  margin: 10px;
-  flex-wrap: wrap;
-  padding: 30px ;
-  text-align: center;
-  flex-grow: 0;
-  width: 350px;
-  transition: all .2s ease-in-out;
-  /* la valeur 0.2 = tps ransition */
-}
-.card:hover {
-  background-color: #163172;
-  color: #E7E9DE;
-  transform: scale(1.05);
-  /* 1.1 = taille grossisement si <0 + petit */
-}
-/* END CARD*/
-
+/* END HEADER$/
 
 
 
@@ -169,18 +270,142 @@ border-bottom-width: 5px;
 
 
 
-/*begin css msg*/
-.message-container {
+/* Card*/
+.flex-container {
+  display: flex;
+  background: #FF5F6D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #FFC371, #FF5F6D);
+   /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #FFC371, #FF5F6D);
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
   padding: 10px;
-  border: 1px solid rgba(220,224,244,0.4);
-  background-color: beige;
-  display: inline-flex;
-  flex-direction: column;
 }
+.card {
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  border: 2px solid #143A52;
+  margin: 10px;
+  flex-wrap: wrap;
+  padding: 30px ;
+  text-align: center;
+  flex-grow: 0;
+  width: 350px;
+  transition: all .2s ease-in-out;
+  /* la valeur 0.2 = tps ransition */
+}
+.card:hover {
+  background-color: #163172;
+  color: #E7E9DE;
+  transform: scale(1.05);
+  /* 1.1 = taille grossisement si <0 + petit */
+}
+/* END CARD*/
+
+
+
+
+/* WAGON STYLE CARD  with boostrap grid*/
+.row {
+  padding: 20px;
+background: #fffc00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ffffff, #fffc00);
+ /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ffffff, #fffc00);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.wagon-card {
+  height: 175px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  padding-bottom: 10px;
+
+}
+/* class qui modif le defaut bootstrap */
+[class*="col-"] {
+    margin-bottom: 15px;
+}
+
+.wagon-card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+.wagon-card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.wagon-card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.wagon-card-description h2 {
+  font-size: 24px;
+  color: red;
+}
+.wagon-card-description p {
+  font-size: 14px;
+  opacity: 1;
+  font-weight: lighter;
+}
+.wagon-card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 0;
+  background: black;
+  opacity: 0;
+}
+.wagon-card-link:hover {
+  opacity: 0.1;
+}
+/* END WAGON STYLE CARD */
+
+
+
+
+
+/*begin css msg*/
+
+
+
+
+.rowsection-container {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  display: flex;
+  justify-content: space-between;
+background: #00C9FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #92FE9D, #00C9FF);
+  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #92FE9D, #00C9FF);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.row-flexitem {
+  width: -webkit-fill-available;
+
+}
+
 .message-body {
   border: solid black;
-  flex-grow: 0;
-  margin: 12px 50px;
+  margin: 12px 20px;
   align-items: flex-start;
   padding: 10px;
   color: rgba(0,0,0,0.4);
@@ -206,10 +431,14 @@ border-bottom-width: 5px;
 }
 .message-body p {
   margin: 6px 0;
-  font-size: 13px;
+  font-size: 15px;
 }
 .message-status {
   font-weight: bold;
+}
+
+.message-status p {
+  font-size: 16px;
 }
 .status.accepted {
   color: #04A366;
@@ -223,113 +452,65 @@ border-bottom-width: 5px;
 /* end css pour msg*/
 
 
-
-/* Begin css nav bar */
-/* Main navbar */
-.navbar-wagon {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,1),0 1px 0 0 rgba(0,0,0,1);
-  background: #808080;
-  transition: all 0.3s ease;
-  height: 65px;
-  padding: 1px 2px 0px 2px;
-  display: flex;
-  justify-content: space-between;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  width: 100%;
-  position: fixed;
-
-
-}
-
-.navbar-wagon-item{
-  flex-grow: 0;
+/* UPVOTE items */
+.product {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  border-radius: 3px;
 }
 
-.navbar-wagon-right{
-display: inline-block;
-justify-content: space-between;
-word-spacing: 80px;
-padding: 0 200px 0 200px;
-}
-
-.navbar-form {
-  padding-right: 30px;
-}
-
-/* Logo */
-.navbar-wagon-brand img{
-    width: 100px;
-    border-radius: 40%;
-    padding: 13px;
-}
-/* User Avatar */
-.navbar-wagon .avatar {
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
-}
-
-/* Basic navbar item */
-.navbar-wagon-drop {
-  cursor: pointer;
-  padding: 0 10px;
-}
-
-/* Navbar link */
-.navbar-wagon-link {
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: bold;
-  word-spacing:
-
-}
-.navbar-wagon-link:hover {
-opacity: 1;
-color: black;
-border-bottom: solid;
+.product:hover {
+  background: rgb(240, 240, 240);
+  transform: scale(1.01);
 }
 
 
-/* Dropdown menu */
-.navbar-wagon-dropdown-menu {
-  margin-top: 10px;
-  box-shadow: none;
-  border-color: #E6E6E6;
+.product:hover .product-upvote {
+  font-size: 25px;
+}
 
+.product:hover h3 {
+  color: #8E0E00;
 }
-.navbar-wagon-dropdown-menu li > a {
-  transition: color 0.3s ease;
-  font-weight: lighter !important;
-  color: #999999 !important;
-  font-size: 13px !important;
-  line-height: 22px !important;
-  padding: 10px 20px;
+
+.product-upvote {
+  font-size: 20px;
+  padding: 20px;
+  transition: all 0.3s ease;
 }
-.navbar-wagon-dropdown-menu li > a:hover {
-  background: transparent !important;
-  color: black !important;
-  font-weight: bold !important;
+
+.product-description {
+  flex: 1 0 auto;
+  padding: 20px;
 }
-.navbar-wagon-dropdown-menu:before {
-  content: ' ';
-  height: 5px;
-  width: 5px;
-  position: absolute;
-  right: 10px;
-  top: -6px;
-  background-color: white;
-  transform: rotate(45deg);
-  border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
+.product-controls a {
+  font-size: 15px;
+  color: #CCCCCC;
 }
-/* End css nav bar */
+.product-controls a:hover {
+  font-size: 15px;
+  color: black;
+}
+
+.product h3 {
+  text-transform: uppercase;
+}
+
+
+.product p {
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+
+
+/* END upvote items */
+
+
+
+
 
 
 /* footer wagon */
@@ -364,180 +545,6 @@ border-bottom: solid;
   font-size: 15px;
 }
 /* fin footer */
-
-
-
-
-
-/* WAGON STYLE CARD  with boostrap grid*/
-
-
-.wagon-card-container {
-  padding: 20px;
-  background-color: red;
-}
-
-
-
-.wagon-card {
-  height: 175px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-position: center;
-  color: white;
-  position: relative;
-}
-.wagon-card-user {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 40px;
-  border-radius: 50%;
-}
-.wagon-card-category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-.wagon-card-description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-.wagon-card-description h2 {
-  font-size: 24px;
-}
-.wagon-card-description p {
-  font-size: 14px;
-  opacity: 0.7;
-  font-weight: lighter;
-}
-.wagon-card-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-  background: black;
-  opacity: 0;
-}
-.wagon-card-link:hover {
-  opacity: 0.1;
-}
-/* END WAGON STYLE CARD */
-
-
-
-
-/* UPVOTE items */
-.product {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border-radius: 3px;
-  transition: all 0.15s ease;
-  border-style: solid;
-  border-color: black;
-}
-
-/* Body design */
-.product-body {
-  flex: 1 1 auto;
-}
-.product-body h3 {
-  font-weight: bold;
-  font-size: 23px;
-  margin-top: 0;
-  color: black
-}
-.product-body p {
-  font-weight: lighter;
-  color: #999999;
-  margin-bottom: 0;
-}
-
-/* Product image */
-.product-image {
-  border-radius: 10px;
-  margin-right: 20px;
-  width: 120px;
-  height: 100px;
-}
-
-/* Upvote design */
-.product-upvote {
-  padding-right: 20px;
-  text-align: center;
-  transition: all 0.15s ease;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 20px;
-}
-.product-count {
-  margin: 2px 0 0;
-}
-.product-arrow {
-  transition: all 0.15s ease;
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid transparent;
-  border-bottom: 9px solid black;
-  border-radius: 2px;
-  margin: auto;
-}
-
-/* Controls design */
-.product-controls {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 0px;
-}
-.product-controls a {
-  padding: 0 20px;
-  font-size: 17px;
-  color: #E6E6E6;
-}
-.product-controls a:hover {
-  color: #D3473C !important
-}
-.product-controls-hidden a {
-  color: transparent;
-  font-size: 15px;
-  transition: all 0.15s ease;
-  border-color: transparent;
-}
-
-/* Hover effects */
-.product:hover {
-  background: #f7f7fa;
-  cursor: pointer;
-}
-.product-upvote:hover, .product-upvote.product-upvote-upvoted {
-  color: #5898f1;
-  cursor: pointer;
-}
-.product-upvote-upvoted .product-arrow {
-  border-bottom-color: #5898f1;
-}
-// .product:hover .product-upvote {
-//   transform: scale(1.2)
-// }
-.product:hover .product-controls-hidden a {
-  color: #E6E6E6;
-}
-.product-upvote:hover .product-arrow {
-  border-bottom: 9px solid #5898f1;
-}
-/* END upvote items */
-
-
-
-
-
 
 
 

@@ -19,56 +19,64 @@
 
 <div class="navbar-wagon">
   <div class="navbar-wagon-item">
-  <!-- Logo -->
-  <a href="" class="navbar-wagon-brand">
-    <img src="images/picture13464024384353.png" alt="logo">
-  </a>
-  <!-- middle Navigation -->
-    <div class="navbar-wagon-right hidden-xs hidden-sm ">
-      <a href="" class="navbar-wagon-link">Host</a>
-      <a href="" class="navbar-wagon-link">Trips</a>
-      <a href="" class="navbar-wagon-link">Messages</a>
+    <!-- Logo -->
+    <a href="" class="navbar-wagon-brand">
+      <img src="images/picture13464024384353.png" alt="logo">
+    </a>
+    <!-- middle Navigation -->
+      <div class="navbar-wagon-right hidden-xs hidden-sm ">
+        <a href="" class="navbar-wagon-link">Host</a>
+        <a href="" class="navbar-wagon-link">Trips</a>
+        <a href="" class="navbar-wagon-link">Messages</a>
+    </div>
   </div>
-</div>
 
 
-<div class="navbar-wagon-item">
 
-   <!-- search form -->
-  <form class="navbar-form navbar-left hidden-xs hidden-sm hidden-md" role="search">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Search">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+  <div class="navbar-wagon-item">
+
+    <div class="navbar-social">
+      <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+      <a href="#""><i class="fa fa-btc" aria-hidden="true"></i></a>
+    </div>
+
+
+     <!-- search form -->
+    <form class="navbar-form navbar-left hidden-xs hidden-sm hidden-md" role="search">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+
+     <!-- dropdown items -->
+    <div class="navbar-wagon-drop">
+        <div class="dropdown">
+        <i class="fa fa-cogs" aria-hidden="true" data-toggle="dropdown"><span class="caret"></span></i>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </div>
+    </div>
 
 
  <!-- Profile picture  dropdown list -->
-  <div class="navbar-wagon-drop">
-    <div class="dropdown">
-    <img src="images/99b4c46cabb65ba610c2f7bca032676d-day-of-the-dead-skeleton-guitar-logo-by-vexels.png" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
-      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li role="separator" class="divider"></li>
-        <li><a href="#">Logout</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="navbar-wagon-drop">
+    <div class="navbar-wagon-drop">
       <div class="dropdown">
-      <i class="fa fa-cogs" aria-hidden="true" data-toggle="dropdown"><span class="caret"></span></i>
+      <img src="images/99b4c46cabb65ba610c2f7bca032676d-day-of-the-dead-skeleton-guitar-logo-by-vexels.png" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Account</a></li>
-      </ul>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
     </div>
+
   </div>
-</div>
-
-
 </div>
 <!-- END NAVBAR -->
 
@@ -180,11 +188,11 @@
 
 
 <!-- WAGON CARD (avatar/background/text) -->
-<div class="wagon-card-container">
+<div class="row justify-content-between">
 
+        <div class="col-xs-12 col-sm-4">
       <!-- insert <div class="card"> -->
         <div class="wagon-card" style="background-image:
-        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
         url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
         <div class="wagon-card-category">Popular</div>
         <div class="wagon-card-description">
@@ -194,11 +202,12 @@
         <img class="wagon-card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
         <a class="wagon-card-link" href="#" ></a>
       </div>
+    </div>
 
 
+    <div class="col-xs-12 col-sm-4">
       <!-- insert <div class="card"> -->
         <div class="wagon-card" style="background-image:
-        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
         url('https://kitt.lewagon.com/placeholder/cities/copenhagen');">
         <div class="wagon-card-category">TOP</div>
         <div class="wagon-card-description">
@@ -208,11 +217,11 @@
           <img class="wagon-card-user" src="https://picsum.photos/250/?random">
           <a class="wagon-card-link" href="#" ></a>
       </div>
+    </div>
 
-
+    <div class="col-xs-12 col-sm-4">
       <!-- insert <div class="card"> -->
       <div class="wagon-card" style="background-image:
-      linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
       url('https://kitt.lewagon.com/placeholder/cities/bordeaux');">
         <div class="wagon-card-category">Best of the best!</div>
         <div class="wagon-card-description">
@@ -222,12 +231,11 @@
         <img class="wagon-card-user" src="https://picsum.photos/200/?random">
         <a class="wagon-card-link" href="#" ></a>
       </div>
+    </div>
 
-
-
+    <div class="col-xs-12 col-sm-4">
       <!-- insert <div class="card"> -->
       <div class="wagon-card" style="background-image:
-      linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
       url('https://kitt.lewagon.com/placeholder/cities/paris');">
         <div class="wagon-card-category">French touch</div>
         <div class="wagon-card-description">
@@ -237,12 +245,12 @@
         <img class="wagon-card-user" src="https://picsum.photos/210/?random">
         <a class="wagon-card-link" href="#" ></a>
       </div>
+    </div>
 
 
-
+    <div class="col-xs-12 col-sm-4">
       <!-- insert <div class="card"> -->
       <div class="wagon-card" style="background-image:
-      linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
       url('https://kitt.lewagon.com/placeholder/cities/brussels');">
         <div class="wagon-card-category">frites!</div>
         <div class="wagon-card-description">
@@ -252,12 +260,11 @@
         <img class="wagon-card-user" src="https://picsum.photos/220/?random">
         <a class="wagon-card-link" href="#" ></a>
       </div>
+    </div>
 
-
-
+    <div class="col-xs-12 col-sm-4">
       <!-- insert <div class="card"> -->
       <div class="wagon-card" style="background-image:
-      linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
       url('https://kitt.lewagon.com/placeholder/cities/lisbon');">
         <div class="wagon-card-category">Morue!</div>
         <div class="wagon-card-description">
@@ -267,6 +274,7 @@
         <img class="wagon-card-user" src="https://picsum.photos/230/?random">
         <a class="wagon-card-link" href="#" ></a>
       </div>
+    </div>
 </div>
 
 <!-- END WAGON CARD -->
@@ -274,81 +282,158 @@
 
 
 
+<!-- row section flex box 2 items -->
+<div class="rowsection-container">
 
-
-<!-- Message -->
-<div class="message-container">
-
-  <div class="message-body">
-    <img class="avatar-small" alt="" src="images/dancer-1904467_640.png">
-    <div class="message-name">
-      <h2>Hubert de labat</h2>
-      <p>10/07/17</p>
-    </div>
-      <p><strong>Achetes jte dit!</strong></p>
-      <p>
-      Achetes sale raptail en plastoc?</p>
-
-    <div class="message-status">
-      <p class="status accepted">Offer</p>
-      <p class="price">€345</p>
-    </div>
-  </div>
-
-  <div class="message-body">
-    <img class="avatar-small" alt="" src="https://picsum.photos/200/?random">
-    <div class="message-name">
-      <h2>Jean de la fontaine</h2>
-      <p>20/12/17</p>
-    </div>
-
-      <p><strong>I am not sure yet!</strong></p>
-      <p>
-      I am not sure yet! I might be in Shanghai at this moment... Can I tell you later?</p>
-
-    <div class="message-status">
-      <p class="status declined">Declined</p>
-      <p class="price">€345</p>
-    </div>
-  </div>
-
+  <!-- Message -->
+  <div class="row-flexitem">
     <div class="message-body">
-          <img class="avatar-small" alt="" src="https://picsum.photos/250/?random">
-    <div class="message-name">
-      <h2>Hubert de labat</h2>
-      <p>22/12/17</p>
-    </div>
-
-      <p><strong>Non pas later non!!!!!</strong></p>
-      <p>
-      All right, now give me your funking money now</p>
+      <img class="avatar-small" alt="" src="images/dancer-1904467_640.png">
+      <div class="message-name">
+        <h2>Hubert de labat</h2>
+        <p>10/07/17</p>
+      </div>
+        <p><strong>Achetes jte dit!</strong></p>
+        <p>
+        Achetes sale raptail en plastoc?</p>
 
       <div class="message-status">
-      <p class="status pending">Pending</p>
-      <p class="price">€345</p>
+        <p class="status accepted">Offer</p>
+        <p class="price">€345</p>
       </div>
     </div>
-</div>
-<!-- END MESSAGES -->
+
+    <div class="message-body">
+      <img class="avatar-small" alt="" src="https://picsum.photos/200/?random">
+      <div class="message-name">
+        <h2>Jean de la fontaine</h2>
+        <p>20/12/17</p>
+      </div>
+
+        <p><strong>I am not sure yet!</strong></p>
+        <p>
+        I am not sure yet! I might be in Shanghai at this moment... Can I tell you later?</p>
+
+      <div class="message-status">
+        <p class="status declined">Declined</p>
+        <p class="price">€345</p>
+      </div>
+    </div>
+
+      <div class="message-body">
+            <img class="avatar-small" alt="" src="https://picsum.photos/250/?random">
+      <div class="message-name">
+        <h2>Hubert de labat</h2>
+        <p>22/12/17</p>
+      </div>
+
+        <p><strong>Non pas later non!!!!!</strong></p>
+        <p>
+        All right, now give me your funking money now</p>
+
+        <div class="message-status">
+        <p class="status pending">Pending</p>
+        <p class="price">€345</p>
+        </div>
+      </div>
+  </div>
+
+  <!-- END MESSAGES -->
+
 
 <!-- item to upvote -->
-<div class="product">
-  <div class='product-upvote'>
-    <div class="product-arrow"></div>
-    <div class='product-count'>95</div>
+<div class="row-flexitem">
+
+
+      <ul class="list-unstyled">
+
+        <li class="product">
+          <div class="product-upvote text-center">
+            <i class="fa fa-caret-up"></i>
+            <p>5</p>
+          </div>
+
+          <img src="https://picsum.photos/200/120/?random" alt="" class="product-image img-rounded">
+
+          <div class="product-description">
+            <h3>Intercom</h3>
+            <p>The best CRM tool.</p>
+          </div>
+
+          <ul class="list-inline product-controls">
+            <li><a href=""><i class="fa fa-heart"></i></a></li>
+            <li><a href=""><i class="fa fa-share"></i></a></li>
+            <li><a href=""><i class="fa fa-star"></i></a></li>
+          </ul>
+        </li>
+        <li class="product">
+
+          <div class="product-upvote text-center">
+            <i class="fa fa-caret-up"></i>
+            <p>10</p>
+          </div>
+
+          <img src="https://picsum.photos/200/120/?random" alt="" class="product-image img-rounded">
+
+          <div class="product-description">
+            <h3>ps4</h3>
+            <p>battlefield</p>
+          </div>
+
+          <ul class="list-inline product-controls">
+            <li><a href=""><i class="fa fa-heart"></i></a></li>
+            <li><a href=""><i class="fa fa-share"></i></a></li>
+            <li><a href=""><i class="fa fa-star"></i></a></li>
+          </ul>
+        </li>
+        <li class="product">
+
+          <div class="product-upvote text-center">
+            <i class="fa fa-caret-up"></i>
+            <p>15</p>
+          </div>
+
+          <img src="https://picsum.photos/200/120/?random" alt="" class="product-image img-rounded">
+
+          <div class="product-description">
+            <h3>tekken</h3>
+            <p>sacré game</p>
+          </div>
+
+          <ul class="list-inline product-controls">
+            <li><a href=""><i class="fa fa-heart"></i></a></li>
+            <li><a href=""><i class="fa fa-share"></i></a></li>
+            <li><a href=""><i class="fa fa-star"></i></a></li>
+          </ul>
+        </li>
+
+        <li class="product">
+          <div class="product-upvote text-center">
+            <i class="fa fa-caret-up"></i>
+            <p>20</p>
+          </div>
+
+          <img src="http://unsplash.it/200/120/?random" alt="" class="product-image img-rounded">
+
+          <div class="product-description">
+            <h3>le bazar</h3>
+            <p>best product</p>
+          </div>
+
+          <ul class="list-inline product-controls">
+            <li><a href=""><i class="fa fa-heart"></i></a></li>
+            <li><a href=""><i class="fa fa-share"></i></a></li>
+            <li><a href=""><i class="fa fa-star"></i></a></li>
+          </ul>
+        </li>
+
+
+
+      </ul>
   </div>
-  <img src="https://picsum.photos/100" alt="" class="product-image hidden-xs">
-  <div class='product-body'>
-    <h3>Product1</h3>
-    <p>Best job offers on your phone</p>
-  </div>
-  <ul class="list-inline product-controls product-controls-hidden hidden-sm hidden-xs">
-    <li><a href=""><i class="fa fa-heart"></i></a></li>
-    <li><a href=""><i class="fa fa-share"></i></a></li>
-    <li><a href=""><i class="fa fa-star"></i></a></li>
-  </ul>
-</div>
 <!-- END item to upvote -->
+</div>
+<!-- row section -->
 
 
 <!-- FOOTER -->
